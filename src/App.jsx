@@ -55,6 +55,7 @@ function App() {
           <p>Are they meters? Feet? Kilometers?</p>
           <p>Leagues? Fathoms? Parsecs?</p>
           <p>Who knows!!</p>
+          <p>This code is open-sourced <a className="fs-6" href="https://github.com/RainyCityCoder/windborne-project">on Github.</a></p>
         </div>
       </div>
     </div>
