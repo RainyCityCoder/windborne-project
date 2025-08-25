@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import '../App.css'
 
 function Card({ index, lat, lon, alt, isOverWater }) {
@@ -32,4 +33,16 @@ function Card({ index, lat, lon, alt, isOverWater }) {
     </div>
   )
 }
+
+Card.propTypes = {
+  index: PropTypes.number.isRequired,
+  lat: PropTypes.number.isRequired,
+  lon: PropTypes.number.isRequired,
+  alt: PropTypes.number.isRequired,
+  isOverWater: PropTypes.oneOfType([
+    PropTypes.bool,   // true/false when API works
+    PropTypes.oneOf([null]) // null when API fails
+  ])
+}
+
 export default Card
