@@ -39,13 +39,14 @@ app.get("/api/treasure/:file", async (req, res) => {
           const waterResp = await fetch(
             `https://is-on-water.balbona.me/api/v1/get/${lat}/${lon}`
           );
+          console.log(waterResp);
           if (!waterResp.ok) {
             console.error("Over-water API HTTP error", waterResp.status);
             return [lat, lon, alt, null];
           }
           try {
             const isOverWater = await waterResp.json();
-            return [lat, lon, alt, isOverWater];
+            return [lat, lon, alt, isOverWater.isWater];
           } catch (parseErr) {
             console.error("Invalid JSON from over-water API: ", parseErr);
             return [lat, lon, alt, null];
