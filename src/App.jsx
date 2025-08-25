@@ -27,12 +27,12 @@ function App() {
       <div className="subtitle-text">
         <p>
           Each card shows a balloon's latitude, longitude, and altitude. The background image indicates whether the balloon is currently over land or water. These are randomly selected from&nbsp;
-          <a className="subtitle-link" href="https://a.windbornesystems.com/treasure/00.json">
+          <a className="subtitle-link page-link" href="https://a.windbornesystems.com/treasure/00.json">
              this Windborne API
           </a>
-          &nbsp;&&nbsp;checked&nbsp;against&nbsp;
-          <a className="subtitle-link" href="https://is-on-water.balbona.me/">
-            the Is On Water API
+          &nbsp;&&nbsp;checked&nbsp;against&nbsp;the&nbsp;
+          <a className="subtitle-link page-link" href="https://is-on-water.balbona.me/">
+            Is On Water API
           </a>.
         </p>
       </div>
@@ -55,7 +55,7 @@ function App() {
           <p>Are they meters? Feet? Kilometers?</p>
           <p>Leagues? Fathoms? Parsecs?</p>
           <p>Who knows!!</p>
-          <p>This code is open-sourced <a className="fs-6" href="https://github.com/RainyCityCoder/windborne-project">on Github.</a></p>
+          <p>This code is open-sourced <a className="fs-6 page-link" href="https://github.com/RainyCityCoder/windborne-project">on Github.</a></p>
         </div>
       </div>
     </div>

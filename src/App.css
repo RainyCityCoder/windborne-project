@@ -3,6 +3,16 @@ body {
   background-color: #1e1e1e; /* really dark gray */
 }
 
+/* Page links */
+.page-link,
+.page-link:link,
+.page-link:visited,
+.page-link:hover,
+.page-link:active {
+  color: #5dade2;       /* light blue, adjust to your preference */
+  text-decoration: underline; /* keep underline if desired */
+}
+
 /* App container */
 .container {
   display: grid;
@@ -63,17 +73,31 @@ body {
 /* Card overlay text */
 .card-img-overlay {
   position: absolute;
-  bottom: 0; /* anchor overlay at bottom */
+  top: 0;      /* span from top */
+  bottom: 0;   /* to bottom */
   left: 0;
   right: 0;
-  top: auto; /* override top */
-  margin-bottom: 0.5rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* push content to bottom */
+  justify-content: space-between; /* spread content top-to-bottom */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+}
+
+/* Card link text */
+.card-text {
+  color: #4da6ff;          /* light blue color */
+  text-decoration: underline;
+}
+.card-text:visited {
+  color: #4da6ff;          /* maintain light blue after visiting */
+}
+.card-text:hover {
+  color: #4da6ff;          /* optionally keep same color on hover, or change */
+}
+.card-text:active {
+  color: #4da6ff;          /* keep same color when active/clicked */
 }
 
 .card-subtitle {
@@ -91,7 +115,7 @@ body {
   padding: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #f0f0f0;
   position: relative;
   bottom: 0;
   white-space: pre-wrap;
