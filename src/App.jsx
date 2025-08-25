@@ -26,9 +26,9 @@ function App() {
       </header>
       <div className="subtitle-text">
         <p>
-          Each card shows a balloon's latitude, longitude, and altitude. The background image indicates whether the balloon is currently over land or water. These are randomly selected from 
+          Each card shows a balloon's latitude, longitude, and altitude. The background image indicates whether the balloon is currently over land or water. These are randomly selected from&nbsp;
           <a className="subtitle-link" href="https://a.windbornesystems.com/treasure/00.json">
-            this Windborne API
+             this Windborne API
           </a>
           &nbsp;&&nbsp;checked&nbsp;against&nbsp;
           <a className="subtitle-link" href="https://is-on-water.balbona.me/">
