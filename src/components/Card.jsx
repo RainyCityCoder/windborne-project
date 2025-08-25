@@ -16,9 +16,13 @@ function Card({ index, lat, lon, alt, isOverWater }) {
         <div className="card-img-overlay overlay-text d-flex flex-column justify-content-between">
           <div className="card-subtitle-group">
             <h5 className="card-title">Balloon #{index}</h5>
-            <h6 className="card-subtitle mb-1">Latitude: {lat}°</h6>
-            <h6 className="card-subtitle mb-1">Longitude: {lon}°</h6>
-            <h6 className="card-subtitle mb-1">Altitude: {alt} units*</h6>
+            <h6 className="card-subtitle mb-1">
+              Latitude: {lat}°<br />
+              Longitude: {lon}°<br />
+              Altitude: {alt}*
+            </h6>
+            {/* <h6 className="card-subtitle mb-1">Longitude: {lon}°</h6> */}
+            {/* <h6 className="card-subtitle mb-1">Altitude: {alt} units*</h6> */}
           </div>
           <a
             className="card-text text-decoration-underline"
